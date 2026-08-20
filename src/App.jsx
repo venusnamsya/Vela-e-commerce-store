@@ -20,7 +20,9 @@ const ProtectedRoute = ({ children }) => {
 const Home = () => (
   <div style={{ padding: '80px 20px', fontFamily: 'sans-serif', textAlign: 'center' }}>
     <h1 style={{ color: '#0B1B3D', fontSize: '42px', marginBottom: '10px' }}>Welcome to Vela Store!</h1>
-    <h2 style={{ color: '#D4AF37', fontSize: '20px', fontWeight: 'bold' }}>Your Gateway to Premium Elegance.</h2>
+    <h2 style={{ color: '#D4AF37', fontSize: '22px', fontWeight: 'bold' }}>Your Gateway to Premium Elegance.</h2>
+    <p style={{ color: '#0B1B3D', fontSize: '20px', fontWeight: 'bold' }}>Experience luxury shopping with just one click!</p>
+    <p style={{ color: '#D4AF37', fontSize: '18px', fontWeight: 'bold' }}>Vela! your one stop online store.</p>
   </div>
 );
 
