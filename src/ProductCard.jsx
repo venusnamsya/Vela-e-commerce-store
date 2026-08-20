@@ -26,7 +26,7 @@ export default function ProductCard({ product }) {
     },
     title: {
       fontSize: '16px',
-      color: '#0B1B3D', // Navy
+      color: '#0B1B3D', 
       fontWeight: '600',
       margin: '10px 0',
       height: '40px',
@@ -34,12 +34,12 @@ export default function ProductCard({ product }) {
     },
     price: {
       fontSize: '18px',
-      color: '#D4AF37', // Gold
+      color: '#D4AF37', 
       fontWeight: 'bold',
       margin: '10px 0',
     },
     button: {
-      background: '#0B1B3D', // Navy
+      background: '#0B1B3D', 
       color: '#FFFFFF',
       border: 'none',
       padding: '10px 15px',

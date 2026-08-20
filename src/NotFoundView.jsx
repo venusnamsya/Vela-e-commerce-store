@@ -10,12 +10,12 @@ export default function NotFoundView() {
     },
     title: {
       fontSize: '72px',
-      color: '#0B1B3D', // Navy
+      color: '#0B1B3D'
       margin: '0',
     },
     heading: {
       fontSize: '24px',
-      color: '#D4AF37', // Gold
+      color: '#D4AF37', 
       margin: '10px 0 20px 0',
     },
     link: {

@@ -20,8 +20,8 @@ export const ShopProvider = ({ children }) => {
   const logout = () => setUser(null);
 
   return (
-    <ShopContext.Provider value={{ cart, user, filters, setFilters, addToCart, removeFromCart, login, logout }}>
+    <ShopProvider value={{ cart, user, filters, setFilters, addToCart, removeFromCart, login, logout }}>
       {children}
-    </ShopContext.Provider>
+    </ShopProvider>
   );
 };

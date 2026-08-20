@@ -1,4 +1,4 @@
-// src/components/FilterSection.jsx
+
 import { useContext } from 'react';
     import { ShopContext } from './ShopContext';
 
@@ -20,7 +20,7 @@ export default function Filter() {
       maxWidth: '400px',
       padding: '12px 20px',
       fontSize: '16px',
-      border: '2px solid #0B1B3D', // Navy Blue border
+      border: '2px solid #0B1B3D', 
       borderRadius: '25px',
       outline: 'none',
       transition: 'box-shadow 0.2s',
@@ -32,7 +32,7 @@ export default function Filter() {
       <input
         type="text"
         placeholder="Search product items..."
-        value={filters.search} // Controlled input component bind
+        value={filters.search} 
         onChange={handleSearchChange}
         style={styles.input}
       />

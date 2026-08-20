@@ -1,4 +1,4 @@
-// src/views/ProductDetailsView.jsx
+
 import { useParams, Link, Outlet } from 'react-router-dom';
 
 export default function ProductDetails() {
