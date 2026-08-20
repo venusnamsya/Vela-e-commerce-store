@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
-import  ShopContext  from './ShopContext';
+import { ShopContext }  from './ShopContext';
 
 export default function Navbar() {
   const { cart, user, logout } = useContext(ShopContext);

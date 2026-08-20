@@ -1,6 +1,6 @@
 
 import { useContext } from 'react';
-import  ShopContext  from './ShopContext';
+import { ShopContext }  from './ShopContext';
 import { Link } from 'react-router-dom';
 
 export default function CartView() {

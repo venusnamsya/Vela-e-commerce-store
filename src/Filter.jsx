@@ -1,6 +1,6 @@
 // src/components/FilterSection.jsx
 import { useContext } from 'react';
-import ShopContext from './ShopContext';
+    import { ShopContext } from './ShopContext';
 
 export default function Filter() {
   const { filters, setFilters } = useContext(ShopContext);

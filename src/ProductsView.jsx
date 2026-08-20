@@ -1,6 +1,6 @@
 
 import { useState, useEffect, useContext } from 'react';
-import  ShopContext  from './ShopContext';
+import  { ShopContext }  from './ShopContext';
 import ProductCard from './ProductCard';
 import Filter from './Filter';
 
@@ -11,7 +11,7 @@ export default function ProductsView() {
   const { filters } = useContext(ShopContext);
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com')
+    fetch('https://fakestoreapi.com/products')
       .then((res) => {
         if (!res.ok) throw new Error('Something went wrong fetching catalog products.');
         return res.json();
@@ -56,7 +56,7 @@ export default function ProductsView() {
 
   return (
     <div style={styles.container}>
-      <FilterSection />
+      <Filtersection />
       <div style={styles.grid}>
         {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />

@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useContext } from 'react';
-import ShopContext  from './ShopContext';
+import { ShopContext } from './ShopContext';
 import Navbar from './Navbar';
 import ProductsView from './ProductsView';
 import ProductDetails from './ProductDetails'
@@ -32,11 +32,11 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductsView />} />
         
-        {/* Dynamic Details Routes */}
+     
         <Route path="/products/:id" element={<ProductDetails />}>
-          <Route path="overview" element={<div>👑 This is the luxury design overview detail section.</div>} />
-          <Route path="reviews" element={<div>⭐ 5/5 Stars - Handcrafted premium durability materials.</div>} />
-          <Route path="specifications" element={<div>📐 Dimensions: Standard Fit | Material: Premium Craft.</div>} />
+          <Route path="overview" element={<div> This is the luxury design overview detail section.</div>} />
+          <Route path="reviews" element={<div>5/5 Stars - Handcrafted premium durability materials.</div>} />
+          <Route path="specifications" element={<div> Dimensions: Standard Fit | Material: Premium Craft.</div>} />
         </Route>
         
         <Route path="/cart" element={<CartView />} />
@@ -44,11 +44,11 @@ export default function App() {
         
         <Route path="/checkout" element={
           <ProtectedRoute>
-            <CheckoutView />
+            <Checkout />
           </ProtectedRoute>
         } />
 
-        {/* Global Catch-All Route for Error Handling */}
+        
         <Route path="*" element={<NotFoundView />} />
       </Routes>
     </BrowserRouter>

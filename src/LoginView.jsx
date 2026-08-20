@@ -1,6 +1,6 @@
 
 import { useState, useContext } from 'react';
-import ShopContext from './ShopContext';
+import { ShopContext } from './ShopContext';
 import { useNavigate } from 'react-router-dom';
 
 export default function LoginView() {
