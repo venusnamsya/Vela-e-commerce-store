@@ -56,7 +56,7 @@ export default function ProductsView() {
 
   return (
     <div style={styles.container}>
-      <Filtersection />
+      <Filter />
       <div style={styles.grid}>
         {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
